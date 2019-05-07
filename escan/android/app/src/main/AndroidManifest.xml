@@ -1,7 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.escan">
 
+    <!--允许应用打开网络套接口-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--清除应用缓存-->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <!--显示系统窗口 允许系统弹窗-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--允许访问摄像头进行拍照-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
 
     <application
       android:name=".MainApplication"
